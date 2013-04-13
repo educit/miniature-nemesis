@@ -1,4 +1,107 @@
-## 2.00.1
+## 2.4.1- 2.4.3
+
+- 2D GEO API: geoPoint, getLine, geoPolygon
+- support for 'json' field type in DAL
+- schema export with db.as_json/as_xml, thanks Alan
+- graph representation of models
+- admin based on bootstrap, thanks Paolo
+- support for semantic versioning
+- new bootstrap based admin, thanks Paolo
+- improved scheduler (and change in scheduler field names), thanks Niphlod
+- graphiz support added to adm, thanks Jose
+- on_failure in grid
+- db.table.field.abs()
+- better wiki
+- geoPoint, getLine, geoPolygon
+- better reporting of 500 ajax errors
+- better grid
+- improved/fixed mongodb support
+- improved parse_as_rest(patterns=...), thanks Denes
+- improved IMAP DAL support, thanks Alan
+- improved security when cookies in sessions
+- Row.as_xml, as_json, as_dict, as_yaml thanks Alan
+- smarted custom_import
+- setup-ubuntu-12-04-redmine-unicorn-web2py-uwsgi-nginx.sh
+- added support for motor and pulsar servers, thanks Niphlod
+- added json-rpc2 support
+- added pypyodbc.py driver
+- allow auth.settings.ondelete='CASCADE'
+- new syntax IS_EXPR(lambda value: ...
+- using google for QR codes (although Graph API will be deprecated in 2015)
+- upgraded fpdf to 1.7.1
+- bug fixes (including issues with calendar.js and archive tables)
+
+## 2.3.1 - 2.3.2
+
+- new virtual fields syntax: 
+  ``db.define_table('person',Field('name'),Field.Virtual('namey',lambda row: row.person.name+'y'))``
+- db.thing(name='Cohen',_orderby=db.thing.name), thanks Yair
+- made many modules Python 3.3 friendly (compile but not tested)
+- better welcome css, thanks Paolo
+- jQuery 1.8.3
+- Bootstrap 2.2.2
+- Modernizr 2.6.2 (custom full options)
+- integration with analyitics.js (0.2.0)
+- better scheduler, thanks Niphlod
+- page and media preview in wiki, thanks Niphlod
+- create new auth.wiki page from slug model, thanks Nico
+- conditional menus with auth.wiki(menugroups=['wiki_editor'])
+- better security in grid/smartgrid
+- allow LOADing multiple grids, thanks Niphlod
+- auth.settings.login_onfail, thanks Yair
+- better handling of session files for speed
+- added heroku support (experimental)
+- added rocket support for IPV6, thanks Chirs Winebrinner
+- more customizable menus with MENU(li_first, li_last..)
+- added support for paymentech (gluon/contrib/paymentech.py)
+- fixed broken cron
+- fixed possible xss with share.js
+- many bug fixes. Closed more than 50 tickets since 2.2.1
+
+## 2.2.1
+
+- session.connect(cookie_key='secret', compression_level=9) stores sessions in cookies
+- T.is_writable = False prevents T from dynamically updating langauge files
+- all code is more PEP8 compliant
+- better custom_importer behaviour (now works per app, is smalled and faster)
+- fixed some bugs
+- upgraded feedparser.py and rss2.py
+- codemirror has autoresize
+
+## 2.1.0
+
+- overall faster web2py
+- when apps are deleted, a w2p copy left in deposit folder
+- change in cron (it is now disabled by default). removed -N option and introduced -Y.
+- faster web2py_uuid() and request initialization logic, thanks Michele
+- static asset management, thanks Niphlod
+- improved mobile admin
+- request.requires_https and Auth(secure=True), thanks Yarin and Niphlod
+- better custom_import (works per app and is faster), thanks Michele
+- redis_sesssion.py, thanks Niphlod
+- allow entropy computation in IS_STRONG and web2py.js, thanks Jonathan and Niphlod
+- fixed many aith.wiki problems
+- support for auth.wiki(render='html')
+- better welcome layout, thanks Paolo
+- db.define_table(...,redefine=True)
+- DAL, Row, and Rows object can now be pickled/unpickled, thanks to zombie DAL.
+- admin uses codemirror
+- allow syntax auth = Auth(db).define_tables()
+- better auth.wiki with preview, thanks Alan
+- better auth.impersonate, thanks Alan
+- upgraded jQuery 1.8
+- upgraded Bootstrap 2.1
+- fixed problem with dropbox_account.py
+- many fixes to cache.ram, cache.disk, memcache and gae_memcache
+- cache.with_prefix(cache.ram,'prefix')
+- db.table.field.epoch() counts seconds from epoch
+- DAL support for SQL CASE, example: db().select(...query.case('true','false))
+- DAL(...,do_connect=False) allows faking connections
+- DAL(...,auto_import=True) now retieves some fiel attributes
+- mail can specify a sender: mail.send(...,sender='Mr X <%(sender)s>')
+- renamed gluon/contrib/comet_messaging.py -> gluon/contrib/websocket_messaging.py
+
+## 2.0.1-11
 
 ### DAL Improvements
 
