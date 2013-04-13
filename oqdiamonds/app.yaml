@@ -1,6 +1,15 @@
+#  For Google App Engine deployment, copy this file to app.yaml
+#  and edit as required
+#  See http://code.google.com/appengine/docs/python/config/appconfig.html
+#  and http://web2py.com/book/default/chapter/11?search=app.yaml
+
 application: oqdiamonds
 version: 1
 api_version: 1
+
+# use this line for Python 2.5
+#
+# runtime: python
 
 # use these lines for Python 2.7
 # upload app with: appcfg.py update web2py (where 'web2py' is web2py's root directory)
@@ -11,6 +20,10 @@ threadsafe: true    # true for WSGI & concurrent requests (Python 2.7 only)
 default_expiration: "24h"   # for static files
 
 handlers:
+
+# Warning! Static mapping - below - isn't compatible with 
+# the parametric router's language logic. 
+# You cannot use them together.
 
 - url: /(?P<a>.+?)/static/(?P<b>.+)
   static_files: applications/\1/static/\2
@@ -26,6 +39,7 @@ handlers:
   upload: applications/welcome/static/robots.txt
 
 - url: .*
+#  script: gaehandler.py         # CGI
   script: gaehandler.wsgiapp    # WSGI (Python 2.7 only)
   secure: optional
 
@@ -70,7 +84,6 @@ skip_files: |
 
 builtins:
 - remote_api: on
-# - datastore_admin: on
 - appstats: on
 - admin_redirect: on
 - deferred: on

@@ -16,7 +16,7 @@
   <tr valign="middle">
   <!-- Home link -->
       <th>&nbsp;&nbsp;&nbsp;<a
-        href="web2py.gluon-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+        href="gluon-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
 
   <!-- Tree link -->
       <th bgcolor="#70b0f0" class="navbar-select"
@@ -60,136 +60,114 @@
 </b></center><br />
 <h1 class="epydoc">Module Hierarchy</h1>
 <ul class="nomargin-top">
-    <li> <strong class="uidlink"><a href="web2py.gluon-module.html">web2py.gluon</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li> <strong class="uidlink"><a href="gluon-module.html">gluon</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>
     <ul>
-    <li> <strong class="uidlink"><a href="web2py.gluon.admin-module.html">web2py.gluon.admin</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li> <strong class="uidlink"><a href="gluon.admin-module.html">gluon.admin</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.cache-module.html">web2py.gluon.cache</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li class="private"> <strong class="uidlink"><a href="gluon.cache-module.html" onclick="show_private();">gluon.cache</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.cfs-module.html">web2py.gluon.cfs</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li> <strong class="uidlink">gluon.cache'</strong>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.cfs-module.html" onclick="show_private();">gluon.cfs</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.compileapp-module.html">web2py.gluon.compileapp</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li class="private"> <strong class="uidlink"><a href="gluon.compileapp-module.html" onclick="show_private();">gluon.compileapp</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.contenttype-module.html">web2py.gluon.contenttype</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
-        Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
-        (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li> <strong class="uidlink"><a href="web2py.gluon.custom_import-module.html">web2py.gluon.custom_import</a></strong>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.dal-module.html">web2py.gluon.dal</a></strong>: <em class="summary">This file is part of the web2py Web Framework
+    <li class="private"> <strong class="uidlink"><a href="gluon.contenttype-module.html" onclick="show_private();">gluon.contenttype</a></strong>: <em class="summary">This file is part of the web2py Web Framework
 Copyrighted by Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt;
-License: LGPLv3 (http://www.gnu.org/licenses/lgpl.html)
-
-Thanks to
-    * Niall Sweeny &lt;niall.sweeny@fonjax.com&gt; for MS SQL support
-    * Marcel Leuthi &lt;mluethi@mlsystems.ch&gt; for Oracle support
-    * Denes
-    * Chris Clark
-    * clach05
-    * Denes Lengyel
-    * and many others who have contributed to current and previous versions
-
-This file contains the DAL support for many relational databases,
-including:
-- SQLite &amp; SpatiaLite
-- MySQL
-- Postgres
-- Firebird
-- Oracle
-- MS SQL
-- DB2
-- Interbase
-- Ingres
-- SapDB (experimental)
-- Cubrid (experimental)
-- CouchDB (experimental)
-- MongoDB (in progress)
-- Google:nosql
-- Google:sql
-- Teradata
-- IMAP (experimental)
-
-Example of usage:
-
-&gt;&gt;&gt; # from dal import DAL, Field
-
-### create DAL connection (and create DB if it doesn't exist)
-&gt;&gt;&gt; db = DAL(('sqlite://storage.sqlite','mysql://a:b@localhost/x'), 
-...</em>    </li>
-    <li> <strong class="uidlink"><a href="web2py.gluon.debug-module.html">web2py.gluon.debug</a></strong>: <em class="summary">This file is part of the web2py Web Framework Developed by 
-        Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt;, limodou 
-        &lt;limodou@gmail.com&gt; and srackham 
-        &lt;srackham@gmail.com&gt;.</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.decoder-module.html">web2py.gluon.decoder</a></strong>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.fileutils-module.html">web2py.gluon.fileutils</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+License: LGPLv3 (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.custom_import-module.html" onclick="show_private();">gluon.custom_import</a></strong>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.dal-module.html" onclick="show_private();">gluon.dal</a></strong>: <em class="summary">This file is part of the web2py Web Framework
+Copyrighted by Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt;
+License: LGPLv3 (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
+    <li> <strong class="uidlink"><a href="gluon.debug-module.html">gluon.debug</a></strong>: <em class="summary">This file is part of the web2py Web Framework Developed by Massimo 
+        Di Pierro &lt;mdipierro@cs.depaul.edu&gt;, limodou 
+        &lt;limodou@gmail.com&gt; and srackham &lt;srackham@gmail.com&gt;.</em>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.decoder-module.html" onclick="show_private();">gluon.decoder</a></strong>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.fileutils-module.html" onclick="show_private();">gluon.fileutils</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.globals-module.html">web2py.gluon.globals</a></strong>: <em class="summary">This file is part of the web2py Web Framework...</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.highlight-module.html">web2py.gluon.highlight</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li class="private"> <strong class="uidlink"><a href="gluon.globals-module.html" onclick="show_private();">gluon.globals</a></strong>: <em class="summary">This file is part of the web2py Web Framework
+Copyrighted by Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt;
+License: LGPLv3 (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.highlight-module.html" onclick="show_private();">gluon.highlight</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.html-module.html">web2py.gluon.html</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li class="private"> <strong class="uidlink"><a href="gluon.html-module.html" onclick="show_private();">gluon.html</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.http-module.html">web2py.gluon.http</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li class="private"> <strong class="uidlink"><a href="gluon.http-module.html" onclick="show_private();">gluon.http</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.import_all-module.html">web2py.gluon.import_all</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li> <strong class="uidlink"><a href="gluon.import_all-module.html">gluon.import_all</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.languages-module.html">web2py.gluon.languages</a></strong>: <em class="summary">This file is part of the web2py Web Framework...</em>    </li>
-    <li> <strong class="uidlink"><a href="web2py.gluon.main-module.html">web2py.gluon.main</a></strong>: <em class="summary">This file is part of the web2py Web Framework...</em>    </li>
-    <li> <strong class="uidlink"><a href="web2py.gluon.messageboxhandler-module.html">web2py.gluon.messageboxhandler</a></strong>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.myregex-module.html">web2py.gluon.myregex</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li class="private"> <strong class="uidlink"><a href="gluon.languages-module.html" onclick="show_private();">gluon.languages</a></strong>: <em class="summary">This file is part of the web2py Web Framework
+Copyrighted by Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt;
+License: LGPLv3 (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
+    <li> <strong class="uidlink"><a href="gluon.main-module.html">gluon.main</a></strong>: <em class="summary">This file is part of the web2py Web Framework
+Copyrighted by Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt;
+License: LGPLv3 (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
+    <li> <strong class="uidlink"><a href="gluon.messageboxhandler-module.html">gluon.messageboxhandler</a></strong>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.myregex-module.html" onclick="show_private();">gluon.myregex</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li> <strong class="uidlink"><a href="web2py.gluon.newcron-module.html">web2py.gluon.newcron</a></strong>: <em class="summary">Created by Attila Csipa &lt;web2py@csipa.in.rs&gt; Modified by 
+    <li> <strong class="uidlink"><a href="gluon.newcron-module.html">gluon.newcron</a></strong>: <em class="summary">Created by Attila Csipa &lt;web2py@csipa.in.rs&gt; Modified by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt;</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.portalocker-module.html">web2py.gluon.portalocker</a></strong>: <em class="summary">Cross-platform (posix/nt) API for flock-style file locking.</em>    </li>
-    <li> <strong class="uidlink"><a href="web2py.gluon.reserved_sql_keywords-module.html">web2py.gluon.reserved_sql_keywords</a></strong>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.restricted-module.html">web2py.gluon.restricted</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li class="private"> <strong class="uidlink"><a href="gluon.portalocker-module.html" onclick="show_private();">gluon.portalocker</a></strong>: <em class="summary">Cross-platform (posix/nt) API for flock-style file locking.</em>    </li>
+    <li> <strong class="uidlink"><a href="gluon.reserved_sql_keywords-module.html">gluon.reserved_sql_keywords</a></strong>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.restricted-module.html" onclick="show_private();">gluon.restricted</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.rewrite-module.html">web2py.gluon.rewrite</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li class="private"> <strong class="uidlink"><a href="gluon.rewrite-module.html" onclick="show_private();">gluon.rewrite</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li> <strong class="uidlink"><a href="web2py.gluon.rocket-module.html">web2py.gluon.rocket</a></strong>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.sanitizer-module.html">web2py.gluon.sanitizer</a></strong>: <em class="summary">:</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.serializers-module.html">web2py.gluon.serializers</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li> <strong class="uidlink"><a href="gluon.rocket-module.html">gluon.rocket</a></strong>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.sanitizer-module.html" onclick="show_private();">gluon.sanitizer</a></strong>: <em class="summary">:</em>    </li>
+    <li> <strong class="uidlink"><a href="gluon.scheduler-module.html">gluon.scheduler</a></strong>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.serializers-module.html" onclick="show_private();">gluon.serializers</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.settings-module.html">web2py.gluon.settings</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li class="private"> <strong class="uidlink"><a href="gluon.settings-module.html" onclick="show_private();">gluon.settings</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li> <strong class="uidlink"><a href="web2py.gluon.shell-module.html">web2py.gluon.shell</a></strong>: <em class="summary">This file is part of the web2py Web Framework Developed by 
-        Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt;, limodou 
-        &lt;limodou@gmail.com&gt; and srackham 
-        &lt;srackham@gmail.com&gt;.</em>    </li>
-    <li> <strong class="uidlink"><a href="web2py.gluon.sql-module.html">web2py.gluon.sql</a></strong>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.sqlhtml-module.html">web2py.gluon.sqlhtml</a></strong>: <em class="summary">This file is part of the web2py Web Framework...</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.storage-module.html">web2py.gluon.storage</a></strong>: <em class="summary">This file is part of the web2py Web Framework...</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.streamer-module.html">web2py.gluon.streamer</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li> <strong class="uidlink"><a href="gluon.shell-module.html">gluon.shell</a></strong>: <em class="summary">This file is part of the web2py Web Framework Developed by Massimo 
+        Di Pierro &lt;mdipierro@cs.depaul.edu&gt;, limodou 
+        &lt;limodou@gmail.com&gt; and srackham &lt;srackham@gmail.com&gt;.</em>    </li>
+    <li> <strong class="uidlink"><a href="gluon.sql-module.html">gluon.sql</a></strong>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.sqlhtml-module.html" onclick="show_private();">gluon.sqlhtml</a></strong>: <em class="summary">This file is part of the web2py Web Framework
+Copyrighted by Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt;
+License: LGPLv3 (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.storage-module.html" onclick="show_private();">gluon.storage</a></strong>: <em class="summary">This file is part of the web2py Web Framework
+Copyrighted by Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt;
+License: LGPLv3 (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.streamer-module.html" onclick="show_private();">gluon.streamer</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.template-module.html">web2py.gluon.template</a></strong>: <em class="summary">This file is part of the web2py Web Framework (Copyrighted, 2007-2011).</em>    </li>
-    <li> <strong class="uidlink"><a href="web2py.gluon.tools-module.html">web2py.gluon.tools</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li class="private"> <strong class="uidlink"><a href="gluon.template-module.html" onclick="show_private();">gluon.template</a></strong>: <em class="summary">This file is part of the web2py Web Framework (Copyrighted, 2007-2011).</em>    </li>
+    <li> <strong class="uidlink"><a href="gluon.tools-module.html">gluon.tools</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.utf8-module.html">web2py.gluon.utf8</a></strong>: <em class="summary">This file is part of the web2py Web Framework...</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.utils-module.html">web2py.gluon.utils</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li class="private"> <strong class="uidlink"><a href="gluon.utf8-module.html" onclick="show_private();">gluon.utf8</a></strong>: <em class="summary">This file is part of the web2py Web Framework
+Copyrighted by Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt;
+License: LGPLv3 (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.utils-module.html" onclick="show_private();">gluon.utils</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.validators-module.html">web2py.gluon.validators</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li class="private"> <strong class="uidlink"><a href="gluon.validators-module.html" onclick="show_private();">gluon.validators</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li> <strong class="uidlink"><a href="web2py.gluon.widget-module.html">web2py.gluon.widget</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li> <strong class="uidlink"><a href="gluon.widget-module.html">gluon.widget</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
-    <li class="private"> <strong class="uidlink"><a href="web2py.gluon.xmlrpc-module.html">web2py.gluon.xmlrpc</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
+    <li> <strong class="uidlink"><a href="gluon.winservice-module.html">gluon.winservice</a></strong>: <em class="summary">This file is part of the web2py Web Framework Developed by Massimo 
+        Di Pierro &lt;mdipierro@cs.depaul.edu&gt; and Limodou 
+        &lt;limodou@gmail.com&gt;.</em>    </li>
+    <li class="private"> <strong class="uidlink"><a href="gluon.xmlrpc-module.html" onclick="show_private();">gluon.xmlrpc</a></strong>: <em class="summary">This file is part of the web2py Web Framework Copyrighted by 
         Massimo Di Pierro &lt;mdipierro@cs.depaul.edu&gt; License: LGPLv3 
         (http://www.gnu.org/licenses/lgpl.html)</em>    </li>
     </ul>
@@ -201,7 +179,7 @@ Example of usage:
   <tr valign="middle">
   <!-- Home link -->
       <th>&nbsp;&nbsp;&nbsp;<a
-        href="web2py.gluon-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+        href="gluon-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
 
   <!-- Tree link -->
       <th bgcolor="#70b0f0" class="navbar-select"
@@ -226,10 +204,11 @@ Example of usage:
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0beta1 on Thu Sep 13 23:51:17 2012
+    Generated by Epydoc 3.0.1 on Sat Apr  6 17:40:01 2013
     </td>
     <td align="right" class="footer">
-      <a href="http://epydoc.sourceforge.net">http://epydoc.sourceforge.net</a>
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
     </td>
   </tr>
 </table>
@@ -240,9 +219,8 @@ Example of usage:
   // javascript is turned off then we want them to be
   // visible); but by default, we want to hide them.  So hide
   // them unless we have a cookie that says to show them.
-  checkCookie()
+  checkCookie();
   // -->
 </script>
-  
 </body>
 </html>

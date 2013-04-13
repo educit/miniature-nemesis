@@ -6,7 +6,7 @@ echo "This script will:
 5) overwrite /etc/apache2/sites-available/default
 6) restart apache.
 
-You may want to read this cript before running it.
+You may want to read this script before running it.
 
 Press a key to continue...[ctrl+C to abort]"
 
@@ -68,6 +68,7 @@ a2enmod proxy
 a2enmod proxy_http
 a2enmod headers
 a2enmod expires
+a2enmod wsgi
 mkdir /etc/apache2/ssl
 
 echo "creating a self signed certificate"
@@ -174,4 +175,3 @@ cd /home/www-data/web2py
 sudo -u www-data python -c "from gluon.widget import console; console();"
 sudo -u www-data python -c "from gluon.main import save_password; save_password(raw_input('admin password: '),443)"
 echo "done!"
-
